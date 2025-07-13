@@ -1,54 +1,68 @@
-# React + TypeScript + Vite
+# DocumentSearchEngine - Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern React-based frontend for the DocumentSearchEngine project that allows users to upload, manage, and search through documents with lightning-fast results.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🔗 Related Repositories
 
-## Expanding the ESLint configuration
+- **Backend Repository**: [DocumentSearchEngine-Backend](https://github.com/username/documentsearchengine-backend)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 📋 Overview
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+DocumentSearchEngine Frontend is a web application built with React and shadcn/ui that provides an intuitive interface for document management and search. Perfect for organizations, colleges, and institutions that handle large volumes of documents and need quick access to their content. Just a hobby project, many fundamental issues here.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## ✨ Features
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- **User Authentication**: Secure registration and login system
+- **Document Upload**: Drag-and-drop or click-to-upload PDF documents
+- **Instant Search**: Real-time search through document content using BM25 algorithm
+- **Document Management**: View, organize, and delete uploaded documents
+- **Responsive Design**: Works seamlessly on desktop and mobile devices
+- **Modern UI**: Clean and intuitive interface built with shadcn/ui components
+- **Dark/Light Mode**: Toggle between themes for better user experience
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## 🛠️ Tech Stack
+
+- **Framework**: React 18
+- **UI Components**: shadcn/ui
+- **Styling**: Tailwind CSS
+- **Build Tool**: Vite
+- **HTTP Client**: Axios
+- **Routing**: React Router
+- **Icons**: Lucide React
+
+## 📦 Installation
+
+### Prerequisites
+
+- Node.js (v16 or higher)
+- npm or yarn
+
+### Setup
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/itsashishrath/DocumentSearchEngineFrontend.git
+   cd DocumentSearchEngineFrontend
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
+
+
+3. **Start the development server**
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
+
+4. **Open your browser**
+   
+   Navigate to `http://localhost:5173` to view the application.
+
+**Built with ❤️ using React and shadcn/ui**
