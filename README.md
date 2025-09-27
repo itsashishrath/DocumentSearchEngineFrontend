@@ -5,7 +5,7 @@ A modern React-based frontend for the DocumentSearchEngine project that allows u
 
 ## 🔗 Related Repositories
 
-- **Backend Repository**: [DocumentSearchEngine-Backend](https://github.com/username/documentsearchengine-backend)
+- **Backend Repository**: [DocumentSearchEngine-Backend](https://github.com/itsashishrath/DocumentSearchEngine)
 
 ## 📋 Overview
 
